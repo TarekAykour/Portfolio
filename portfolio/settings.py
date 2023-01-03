@@ -36,8 +36,8 @@ ALLOWED_HOSTS = []
 
 # email
 EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_HOST_USER = env('EMAIL')
-EMAIL_HOST_PASSWORD = env('APP_PASSWORD')
+# EMAIL_HOST_USER = env('EMAIL')
+# EMAIL_HOST_PASSWORD = env('APP_PASSWORD')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
