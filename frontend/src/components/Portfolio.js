@@ -6,7 +6,7 @@ import ProjectDiv from "./ProjectDiv";
 console.log(projects)
 function Portfolio(){
     return (
-        <div className="portfolio-page" style={{marginTop: '5%'}}>
+        <div className="portfolio-page" style={{marginTop: '5%', marginBottom: '5%'}}>
             <h2 style={{ color: 'white', fontWeight: 'bold', fontSize: '48px'}}>
             Portfolio
             <div className="underline"></div>

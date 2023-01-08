@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    background: #333;
     max-width: 100%;
     font-family: montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
@@ -9,7 +8,9 @@
 
 
 body {
+    width: 100%;
     background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -17,6 +18,7 @@ body {
 /* NAV */
 .nav.justify-content-center {
     padding: 10px;
+    justify-content: center;
 
 
 }
@@ -54,6 +56,12 @@ body {
 }
 
 
+.Home {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
 /* container */
 .cc {
 color: white;
@@ -63,14 +71,62 @@ font-family: montserrat;
 height: 50%;
 margin-top: 5%;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
 
 }
+
+.left-container p {
+    text-align: center;
+}
+
+.left-container .btn {
+    position: relative;
+    width: 200px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .cc {
     width: 75%;
 }
+
+.skills-images {
+    background: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+
+.skills-images .frontend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-images .backend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-images .Other {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
 .left-container {
+    width: 75%;
+    margin: auto;
     margin-left: 5%;
 }
 
@@ -78,19 +134,13 @@ grid-template-columns: 1fr 1fr;
 
 
 
-.image-div {
-  background-repeat: no-repeat;
-  background-position: 0px -5px;
-  background-size: 100% 100%;
-  position: relative;
-  box-shadow: 1px 1px 3px black;
-  width: 100%;
-  border-left: solid 15px #eb4034;
-  border-right: solid 15px #eb4034;
+
+
+
+.image-container {
+
+    transform: translateY(25%);
 }
-
-
-
 .image-container h2 {
     position: relative;
     width: 200px;
@@ -108,6 +158,10 @@ grid-template-columns: 1fr 1fr;
 
 
 
+}
+
+.letters {
+    text-align: center;
 }
 
 .porftolio-h2 {
@@ -183,6 +237,7 @@ h2 {
 .portfolio-page {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
    
 }
 
@@ -194,17 +249,18 @@ h2 {
     
 }
 
+
+
 .portfolios {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    grid-template-rows: 1fr;
     justify-content: space-between;
-    max-width: 100%;
+    width: 95%;
     margin: auto;
-    margin-bottom: 15%;
+    grid-gap: 10px;
+    height: 75%;
     
-   
-    
-   
 }
 
 
@@ -215,23 +271,78 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    width: 600px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 15%;
-    margin-bottom: 25%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1px 1px rgb(255, 84, 84);
 }
 
-.project-div img {
-    filter: drop-shadow(5px 5px 5px #222);
+
+.bar {
+    width: 100%;
+    height: 30px;
+    background: rgb(159, 159, 159);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 1px 3px black;
 }
 
-.project-div h2 {
-    font-weight: bold;
-    font-size: 32px;
+.searchbar {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    color: black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.cicrlces {
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
 }
 
+.red {
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    background: #eb4034;
+    margin-right: 5px;
+}
+
+.orange {
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    background: #eb7a34;
+    margin-right: 5px;
+}
+
+.green {
+    width: 18px;
+    height: 18px;
+    border-radius:50%;
+    background: #34eb59;
+    margin-right: 5px;
+}
+
+.image-div {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-div {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 
@@ -239,6 +350,7 @@ h2 {
 .modal-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 .modal-display-image {
@@ -248,7 +360,6 @@ h2 {
 .modal-display img {
     width: 100%;
     max-width: 100%;
-    height: 75%;
     transform: scale(1);
     transition: transform 300ms;
     margin-right: 50px;
@@ -259,6 +370,10 @@ h2 {
     transition: all 300ms;
 }
 
+
+.fa-xmark {
+    margin: 5px;
+}
 
 /* CONTACT PAGE */
 
@@ -298,15 +413,24 @@ form {
 
 footer {
     position: fixed;
-    bottom: -10px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background: black;
     color: white;
-    margin-top: 25px;
+    margin-top: 0;
     height: 50px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
     overflow: visible;
     
+    
 
+}
+
+footer ul {
+    list-style: none;
 }
 
 
@@ -317,14 +441,11 @@ footer a {
 }
 
 footer li {
-    display: inline-block;
+    position: relative;
     padding: 5px;
     text-align: center;
-    margin-right: 50%;
-    float: right;
-    background: black;
-    margin-bottom: 10px;
-    top: 5px;
+    
+    
 
 }
 
@@ -356,7 +477,8 @@ textarea {
   }
 
   .normal-nav {
-    display: block;
+    color: red;
+    
   }
 
 
@@ -478,12 +600,6 @@ textarea {
     }
 
 
-
-    .image-div {
-        width: 100% ;
-    
-    }
-
     .project-div {
         width: 95%;
         margin: auto;
@@ -549,11 +665,14 @@ textarea {
     width: 100%;
 }
 
+
+
 .cc .btn{
     width: 50%;
     margin: auto;
-    transform: translateX(50%);
 }
+
+
 
  .left-container {
     width: 100%;
@@ -603,7 +722,13 @@ textarea {
   }
 
 
+
+
   /* FORMS */
+.Home .forms {
+    width: 75%;
+    margin: auto;
+}
 .forms h2 {
     left: 50%;
     transform: translateX(-25%);

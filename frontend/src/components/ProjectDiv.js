@@ -77,13 +77,21 @@ function ProjectDiv(props){
         <div>
         <div className="project-div" key={props.key} onClick={()=> setModal(true)}>
             {/* images */}
-            <div>
-            <img src={`../../static/images/${image}`}></img>
-            </div>
-            <div>
-            <h2>{props.name}</h2>
-            </div>
             
+            <div className="bar">
+                <div className="cicrlces">
+                    <div className="red"></div>
+                    <div className="orange"></div>
+                    <div className="green"></div>
+                </div>
+                <div className="searchbar">
+                    {props.name}
+                </div>
+            </div>
+            <div className="image-div" >
+                <img className="front-image" src={`../../static/images/${image}`} style={{width: '100%', height: '100%'}}></img>
+                {/* <img className="backend-image" src={`../../static/images/${image}`}></img> */}
+            </div>
         </div>
         <Modal key={props.id} id="modal" isOpen={modal} style={customStyles}>
             <FontAwesomeIcon icon={faTimes} size="2x" onClick={()=> setModal(false)} />

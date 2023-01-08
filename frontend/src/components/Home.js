@@ -1,5 +1,8 @@
 import React from "react";
 import Typical from "react-typical"
+import Contact from "./Contact";
+import Journey from "./Journey";
+
 
 function Home(){
 
@@ -23,32 +26,31 @@ function Home(){
                 </div>
                 <div class="image-container">
                         <h1>Skills<div class="skills"></div></h1>
-                        <div class="frontend">
-                            <h2>Frontend<div class="underline"></div></h2>
-                        <div class="img-list">
-                            <img id='1'src="../../static/images/html.png"></img>
-                            <img id='2'src="../../static/images/css.png"></img>
-                            <img id='3'src="../../static/images/javscript.png"></img>
-                            <img id='4'src="../../static/images/react.png"></img>
-                            <img id='5'src="../../static/images/bootstrap.png"></img>
-                        </div>
-                        </div>
-                        <div class="backend">
-                            <h2>backend<div class="underline"></div></h2>
-
-                            <img src="../../static/images/python.png"></img>
-                            <img src="../../static/images/django.png"></img>
-                            <img src="../../static/images/nodejs.png"></img>
-                            <img src="../../static/images/sql.png"></img>
-                            <img src="../../static/images/mongodb.png"></img>
-                        </div>
-                        <div class="Other">
-                            <h2>Other<div class="underline"></div></h2>
-
-                            <img src="../../static/images/git.png"></img>
+                        <div className="skills-images">
+                            <div class="frontend">
+                            <div class="img-list">
+                                <img id='1'src="../../static/images/html.png"></img>
+                                <img id='2'src="../../static/images/css.png"></img>
+                                <img id='3'src="../../static/images/javscript.png"></img>
+                                <img id='4'src="../../static/images/react.png"></img>
+                                <img id='5'src="../../static/images/bootstrap.png"></img>
+                            </div>
+                            </div>
+                            <div class="backend">
+                                <img src="../../static/images/python.png"></img>
+                                <img src="../../static/images/django.png"></img>
+                                <img src="../../static/images/nodejs.png"></img>
+                                <img src="../../static/images/sql.png"></img>
+                                <img src="../../static/images/mongodb.png"></img>
+                            </div>
+                            <div class="Other">
+                                <img src="../../static/images/git.png"></img>
+                            </div>
                         </div>
                 </div>
             </div>
+            <Journey/>
+            <Contact/>
             </div>
     )
 }
