@@ -6,6 +6,7 @@ import Home from "./Home"
 import Contact from "./Contact"
 import Portfolio from "./Portfolio"
 import Footer from "./Footer";
+import Journey from "./Journey";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/portfolio" component={Portfolio}/>
+            <Route path= "/journey" component={Journey}/>
         </Switch>
         <Footer/>
     </Router>
