@@ -61,7 +61,6 @@ sortedcontainers==2.4.0
 soupsieve==2.3.2.post1
 SQLAlchemy==1.4.45
 sqlparse==0.4.2
-submit50==3.1.1
 termcolor==1.1.0
 trio==0.22.0
 trio-websocket==0.9.2
