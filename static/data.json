@@ -1,0 +1,86 @@
+[
+    
+        {
+        "id": 1,
+        "name": "Astrotravel",
+        "description": "Astrotravel is a webapp that i made as a final project during CS50X. The app contains a travel page, where the user can select a departure and destination planet followed by a vehicle. The app then calculates the travel time and the time of arrival. There's also a solar system page, where the solar system planets are orbitting our glorious sun. The user is able to click on each of the planet to read some interesting facts about the planet. The technlogies used are: ",
+        "technologies": ["Flask (backend)", "HTML5,CSS3,JS(frontend)", "Heroku (Deployment)", "Git (version control)"],
+        "images": [
+            "astrotravel/home.png",
+            "astrotravel/travel.png",
+            "astrotravel/solar.png",
+            "astrotravel/planetinfo.png",
+            "astrotravel/home.png"
+        ],
+        "link": "https://astrotravel.onrender.com/"
+    },
+    
+    {
+        "id": 2,
+        "name": "Payfriend",
+        "description": "Payfriend is a bank application that got its inspiration from paypal and other various existing bank applications. You can transfer money, request payments, add to savings and costumize your profile. The technologies used are:",
+        "technologies": ["Django (backend)","React (frontend)","Bootstrap(styling)","SQL (Database)","AWS(hosting the App)", "Azure(hosting the SQL Database)"],
+        "images": [
+            "bankapp/bankapp-register.png",
+            "bankapp/bankapp-home.png",
+            "bankapp/bankapp-transfer.png",
+            "bankapp/bankapp-transactions.png",
+            "bankapp/bankapp-profile.png"
+        ],
+        "link": "http://ec2-13-41-54-184.eu-west-2.compute.amazonaws.com"
+    },
+
+    {
+        "id": 3,
+        "name": "Commerce",
+        "description": "I made commerce during my journey through CS50W. Commerce is a (you guessed it) an ecommerce webapp. It resembles Ebay, where anyone can list their second-hand products and let people bid on them. The app has got the following functionality: create account, login, create and list items, filter products on category, close listing, add listing to your watchlist and some more! The technologies used are:",
+        "technologies": ["Django (backend)", "Bootstrap(frontend)", "HTML5,CSS3,JS (frontend)", "SQLITE3 (Database)"],
+        "images": [
+            "commerce/listing.png",
+            "commerce/listings.png",
+            "commerce/categories.png",
+            "commerce/comment.png",
+            "commerce/watchlist.png",
+            "commerce/create_listing.png"
+        ],
+        "link": "https://eydiue33.pythonanywhere.com/"
+
+    },
+
+    {
+        "id": 4,
+        "name": "Network",
+        "description": "Network is a small Twitter replica, where you can add,like and edit posts. You can also follow the users. I made this project during CS50W. The technologies used are:",
+        "technologies": ["Django (backend)", "HTML5,CSS3,JS (frontend)", "SQLITE3 (Database)"],
+        "images": [
+            "network/all-posts.png",
+            "network/login.png",
+            "network/nav.png",
+            "network/followers.png",
+            "network/post-edit.png"
+            
+        ],
+        "link": "https://web-production-94f7.up.railway.app/"
+    },
+
+    {
+        "id": 5,
+        "name": "Zflix",
+        "description": "Zflix is a imdb kind-of-replica. The user can see the most recent, popular and top rated movies on the homepage, search for  movies with the searchbar and add movies to his watchlist.  The technologies used are:",
+        "technologies": ["React (frontend), HTML (frontend), CSS3 (frontend)"],
+        "images": [
+            "movie/header.png",
+            "movie/moviepage.png",
+            "movie/searchmenu.png",
+            "movie/toprated.png",
+            "movie/watchlist.png"
+            
+        ],
+        "link": "https://monumental-llama-d7d118.netlify.app/"
+    }
+
+
+
+   
+
+]
