@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://portfolio-8c3e.onrender.com']
+ALLOWED_HOSTS = ['portfolio-8c3e.onrender.com']
 
 # email
 EMAIL_HOST = 'smtp-mail.outlook.com'
