@@ -67,11 +67,11 @@ function Home(){
             <div className="portfolio-preview">  
                 {projects.splice(3,2).map(project => {
                     return (
-                    <div style={{
+                    <div  style={{
                         color: "red",
                         margin: '25px',
                         width: '100%',
-                        background: 'rgb(187, 187, 187)',
+                        
                         
                         }}>
                          <div className="bar">
@@ -84,7 +84,7 @@ function Home(){
                                 {project.name}
                             </div>
                         </div>
-                        <a href="/portfolio">
+                        <a  href="/portfolio">
                         <div
                         style={{
                             background: `url(../../static/images/${project.images[1]})`,

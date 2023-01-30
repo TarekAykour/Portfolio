@@ -92,6 +92,18 @@ function ProjectDiv(props){
                 <img className="front-image" src={`../../static/images/${image}`} style={{width: '100%', height: '100%'}}></img>
                 {/* <img className="backend-image" src={`../../static/images/${image}`}></img> */}
             </div>
+            <div className="hover-info">
+                    <h1>{props.name}</h1>
+                    <p>{props.description}</p>
+                    <ul>
+                        {props.technologies.map(techonlogy => {
+                            return (
+                                <li>{techonlogy}</li>
+                            )
+                        })}
+                    </ul>
+                    <a className="btn btn-primary" href={props.link}>Go to webapp</a>
+                </div>
         </div>
         <Modal key={props.id} id="modal" isOpen={modal} style={customStyles}>
             <FontAwesomeIcon icon={faTimes} size="2x" onClick={()=> setModal(false)} />
