@@ -67,7 +67,7 @@
         "id": 5,
         "name": "Zflix",
         "description": "Zflix is a imdb kind-of-replica. The user can see the most recent, popular and top rated movies on the homepage, search for  movies with the searchbar and add movies to his watchlist.  The technologies used are:",
-        "technologies": ["React (frontend), HTML (frontend), CSS3 (frontend)"],
+        "technologies": ["React (frontend)", "HTML (frontend)", "CSS3 (frontend)"],
         "images": [
             "movie/header.png",
             "movie/moviepage.png",
@@ -77,6 +77,21 @@
             
         ],
         "link": "https://monumental-llama-d7d118.netlify.app/"
+    },
+
+    {
+        "id": 6,
+        "name": "sockY",
+        "description": "SockY is an online chatapp where you can add users and chat with them. The app also offers chat groups, chat settings to costumize your chat, profile costumization and encryption.",
+        "technologies": ["Django" ,"Django channels", "Redis (chat server)" ,"React (frontend)", "HTML (frontend)", "CSS3 (frontend)"],
+        "images": [
+            "chatapp/Login.png",
+            "chatapp/home.png",
+            "chatapp/profile.png",
+            "chatapp/chat.png",
+            "chatapp/friends.png"
+        ],
+        "link": "https://chatapp-jgrw.onrender.com"
     }
 
 
