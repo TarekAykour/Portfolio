@@ -30,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['portfolio-8c3e.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['portfolio-8c3e.onrender.com']
 
 # email
 EMAIL_HOST = 'smtp-mail.outlook.com'
