@@ -5,11 +5,19 @@ import {Parallax, ParallaxLayer} from "@react-spring/parallax"
 function Journey(){
     const size = useWindowSize();  
 
-
+    // MOBILE VERSION
     if(size.width <= 600){
         return(
             <div className="journey">
-                <h2 className="journey-title">The Journey <div className="underline"></div></h2>
+                <h2 className="journey-title">The Journey 
+                    <div className="underline" 
+                    style={{
+                    position: 'relative',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+                        }}>
+                    </div>
+                </h2>
                 
                 <div className="stories">
         
@@ -195,7 +203,16 @@ function Journey(){
     else {
     return(
         <div className="journey">
-            <h2 className="journey-title">The Journey <div className="underline"></div></h2>
+            <h2 className="journey-title">
+                The Journey
+                <div className="underline" 
+                    style={{
+                    position: 'relative',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
+                        }}>
+                    </div>
+             </h2>
             
             <div className="stories">
     

@@ -2,14 +2,13 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
-overflow-x: hidden;
+    overflow-x: hidden;
   }
+
 
 
 * {
     margin: 0;
-    
-    
     font-family: montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
@@ -17,9 +16,7 @@ overflow-x: hidden;
 
 
 body {
-   
-    
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(22, 22, 22);
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -74,7 +71,8 @@ body::-webkit-scrollbar {
     display: grid;
     max-width: 100%;
     grid-template-rows: .5fr 1fr 1fr 1fr;
-
+    width: 75%;
+    margin: auto;
    
 }
 
@@ -98,9 +96,13 @@ body::-webkit-scrollbar {
 }
 
 .journey-title {
-    width: 50%;
+    color: white; 
+    text-align: center;
+    font-weight: bold; 
+    font-size: 48px;
     margin: auto;
-    
+    margin-bottom: 125px;
+    margin-top: 125px;
 }
 
 
@@ -164,7 +166,7 @@ body::-webkit-scrollbar {
 .story-image {
     position: absolute;
     z-index: -1;
-    filter: brightness(50%);
+    filter: brightness(25%);
     bottom: 0;
     transform: translateX(75%);
     /* filter: blur(2px); */
@@ -293,21 +295,21 @@ grid-gap: 1rem;
 .image-container h2 {
     position: relative;
     width: 200px;
-    z-index: 12;
     text-transform: uppercase;
     font-weight: 500;
     margin: 25px 25px 0 0;
 
 }
+
 .image-container h1 {
-    transform: translateX(25%);
+    position: relative;
+    text-align: center;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 48px;
-
-
-
 }
+
+
 
 .letters {
     text-align: center;
@@ -323,8 +325,6 @@ grid-gap: 1rem;
     width: 200px;
     height: 15px;
     padding: 15px;
-    
-    background: #eb4034;
     text-transform: uppercase;
 }
 
@@ -335,7 +335,7 @@ grid-gap: 1rem;
     height: 15px;
     padding: 15px;
     transform: translate(30px,-25.5px);
-    background: #eb4034;
+    
 }
 
 
@@ -362,7 +362,7 @@ h2 {
     width: 200px;
     height: 15px;
     padding: 15px;
-    background-color: #eb4034;
+    background-color: #df3b30;
     transform: translate(30px,-25.5px);
     z-index: -1;
 
@@ -389,6 +389,18 @@ h2 {
     
 }
 
+.portfolio-preview-div {
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.portfolio-preview-div:hover {
+    transform: scale(0.9);
+    transition: transform 300ms;
+}
+
+.portfolio-preview-page
+
 
 
 /* PORTFOLIO */
@@ -398,14 +410,16 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    z-index: -1;
    
 }
 
 
 .portfolio-page h2 {
     width: 50%;
-    left: 50%;
-    transform: translateX(-25%);
+    left: 20%;
+    transform: translateX(50%);
+    margin-bottom: 50px;
     
 }
 
@@ -438,6 +452,13 @@ h2 {
     box-shadow: 1px 1px 5px black;
     cursor: pointer;
     overflow: hidden;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+.project-div:hover {
+    transform: scale(0.9);
+    transition: transform 300ms;
 }
 
 .hover-info {
@@ -532,6 +553,15 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    border: none;
+    position: relative;
+    z-index: 9;
+}
+
+.ReactModalPortal #modal {
+    border: none;
+    position: relative;
+    z-index: 2;
 }
 
 .modal-display-image {
@@ -577,6 +607,7 @@ form {
     transform: translateY(50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .name-and-email {
@@ -754,7 +785,11 @@ textarea {
   } 
 
 
-
+  .portfolio-page h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
  
 
   .closed {
@@ -794,8 +829,18 @@ form {
 
 .portfolio-preview-page h2 {
     position: relative;
-    left: 50%;
-    transform: translateX(-25%);
+    transform: translateX(5%);
+    text-align: center;
+}
+
+/* HOME */
+.Home {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+    width: 100%;
+    
+   
 }
 
 /* journey */
@@ -917,9 +962,18 @@ margin-bottom: 50px;
 
     .portfolio-page h2 {
         text-align: center;
-        width: 100%;
-        left: 25%;
+        left: 0%;
+        transform: translateX(-25%);
+        margin: auto;
+        text-shadow: none;
         margin-bottom:10% ;
+    }
+    
+
+    .portfolio-page .underline {
+        position: relative;
+        /* left: 50%; */
+        transform: translateX(50%);
     }
 
     .modal-display {
@@ -939,6 +993,7 @@ margin-bottom: 50px;
         width: 50%;
         height: 500px;
         overflow-y: scroll;
+        border: none;
         
 
     }
@@ -1027,13 +1082,20 @@ margin-bottom: 50px;
     width: 75%;
     margin: auto;
     margin-top: 25px;
+  
 }
 
 
 .forms h2 {
-    left: 50%;
-    transform: translateX(-25%);
-    margin-bottom: -100% ;
+    text-align: center;
+    position: relative;
+    margin-bottom: -50%;
+   
+}
+
+
+.btn-success {
+    background: black;
 }
 
 .form-section {
@@ -1051,8 +1113,17 @@ margin-bottom: 50px;
 
 .form-section .info {
     margin-top: 50px;
-   left: 50%;
-   transform: translateX(-10%);
+   
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.contact-info-item {
+    padding: 5px;
+}
+.contact-info-item p {
+    font-size: 10px;
 }
 
 footer {

@@ -102,7 +102,7 @@ function ProjectDiv(props){
                             )
                         })}
                     </ul>
-                    <a className="btn btn-primary" href={props.link}>Go to webapp</a>
+                    <a className="btn btn-danger" href={props.link}>Go to webapp</a>
                 </div>
         </div>
         <Modal key={props.id} id="modal" isOpen={modal} style={customStyles}>
@@ -123,7 +123,7 @@ function ProjectDiv(props){
                             )
                         })}
                     </ul>
-                    <a href={props.link}>Go to webapp</a>
+                    <a className="btn btn-danger" href={props.link}>Go to webapp</a>
                 </div>
             </div>
         

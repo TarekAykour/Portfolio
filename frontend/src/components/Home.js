@@ -1,21 +1,20 @@
-import React from "react";
-import Typical from "react-typical"
+import React, { useEffect, useState } from "react";
 import Contact from "./Contact";
 import Journey from "./Journey";
-import projects from "../../static/data"
+import projectsData from "../../static/data"
 import ProjectDiv from "./ProjectDiv";
 
 
 
-
-
-
+// The projects are not loading in correctly, change this! 19-4-23 11:12!!
 function Home(){
+    const [projects, setProjects] = useState([projectsData])
     
-        
+    useEffect(()=> {
+        setProjects(projectsData)
+    }, [projects])
     return (
         <div className="Home">
-       
                 <div class="left-container" >
                 <div class="ml11 text">
                     <span className="text-wrapper">
@@ -23,15 +22,24 @@ function Home(){
                     <h1 className="letters" style={{fontWeight: 'bold'}}>Tarek Aykour</h1>
                     </span>
                 </div>
-                <Typical  steps={['<h1>About me</h1>', 1000, 
-                `<p> I am a 21 year old web developer from The Netherlands.\v I have been learning web development since March, 2020 and have failed miserabely. But after some courses, projects, crying and a lot of hard work i managed to become a 'professional' in the field. As my hobby stack i've got: reading (primarly science related books such as 'al-muqadimmah' by Ibn Khaldun or 'The rise and fall of the great powers' by Paul Kennedy), running, calisthenics and learning new skills</p>`
-                , 5000
-                
-                ]} />
+                <p>
+                I am a 21 year old web developer from The Netherlands.
+                I have been learning web development since March, 2020 and have failed miserabely. 
+                But after some courses, projects, a lot of crying and hard work i managed to become a 'professional' in the field.
+                As my hobby stack i've got: reading (primarly science related books such as 'al-muqadimmah' by Ibn Khaldun or 
+                'The rise and fall of the great powers' by Paul Kennedy or 'A brief history of time' by the legendary Stephen Hawking), running, calisthenics and learning new skills
+                </p>
                 <a href="/portfolio" class='btn btn-primary'>See projects</a>
                 </div>
-                <div class="image-container">
-                        <h1 style={{color: 'white'}}>Skills<div class="skills"></div></h1>
+                <div class="image-container" style={{marginBottom: '150px'}}>
+                        <h1 style={{color: 'white'}}>Skills<div className="underline" 
+                            style={{
+                                backgroundColor: '#df3b30',
+                                position: 'relative',
+                                left: '50%',
+                                transform: 'translateX(-50%)'
+                            }}></div>
+                        </h1>
                         <div className="skills-images">
                             <div class="frontend">
                             <h2 style={{color:'white'}}>Frontend<div className="skills"></div></h2>
@@ -57,22 +65,31 @@ function Home(){
                             <h2 style={{color:'white'}}>Other<div className="skills"></div></h2>
                             <div className="other-images">
                                 <img src="../../static/images/git.png"></img>
+                                <img src="../../static/images/Docker.png"></img>
+                                <img src="../../static/images/aws.png"></img>
                             </div>
                             </div>
                         </div>
                 </div>
             
-            <div className="portfolio-preview-page">
-                <h2 style={{color: 'white'}}>Portfolio <div className="skills"></div></h2>
+            <div className="portfolio-preview-page" style={{marginTop: '50px'}}>
+                <h2 style={{
+                color: 'white', 
+                textAlign: 'center',
+                fontWeight: 'bold', 
+                fontSize: '48px',
+                }}>Portfolio<div className="underline" style={{
+                position: 'relative',
+                left: '50%',
+                transform: 'translateX(-50%)'
+            }}></div></h2>
             <div className="portfolio-preview">  
-                {projects.splice(3,2).map(project => {
+                {projects.splice(4,2).map(project => {
                     return (
-                    <div  style={{
+                    <div className="portfolio-preview-div"  style={{
                         color: "red",
                         margin: '25px',
                         width: '100%',
-                        
-                        
                         }}>
                          <div className="bar">
                             <div className="cicrlces">
@@ -103,9 +120,7 @@ function Home(){
             </div>
             </div>
             <Contact/>
-            <div className="resume">
-                download my resume
-            </div>
+            
             </div>
     )
 }

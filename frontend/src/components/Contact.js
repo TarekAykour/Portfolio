@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import CSRFToken from "./csrftoken"
 import {useHistory} from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 function Contact(){
     // states
@@ -91,9 +94,18 @@ function Contact(){
 
     return (
         <div className="forms">
-            <h2 style={{color: 'white', fontWeight: 'bold', fontSize: '48px'}}>
+            <h2 style={{
+                color: 'white', 
+                fontWeight: 'bold', 
+                fontSize: '48px',
+                textAlign: 'center'
+                }}>
             Contact
-            <div className="underline"></div>
+            <div className="underline" style={{
+                position: 'relative',
+                left: '50%',
+                transform: 'translateX(-50%)'
+            }}></div>
             </h2>
             <div className="form-section">
             <form onSubmit={handleSubmit}>
@@ -117,14 +129,32 @@ function Contact(){
                 <textarea className="form-control" type="text" name="message" placeholder="input message" onChange={handleChange}></textarea>
                 </div>
                 {error ? <p className="alert alert-danger" role="alert">{error}</p> : ''}
-                <input type="submit" value="submit" className="btn btn-primary"></input>
+                <input type="submit" value="submit" className="btn btn-danger"></input>
             </form>
             <div className="info">
             <h2 style={{color: 'white', fontWeight: 'bold', fontSize: '48px'}}>
-                Some info
+                Contact info
             <div className="underline" style={{background: 'black'}}></div>
-            <p style={{fontSize: '19px', fontWeight: '200', textAlign: 'left'}}>{'<p>Coming soon</p>'}</p>
             </h2>
+            <ul className="contact-info-list" style={{listStyle: 'none'}}>
+                <li>
+                    <div className="contact-info-item">
+                    <a href="mailto: tarekaykourbusiness@outlook.com" style={{float:'left'}}><FontAwesomeIcon size="2x" style={{color: 'white', textAlign: 'center'}} icon={faEnvelope}/></a>
+                    <p style={{color:'white', float: 'right'}}>tarekaykourbusiness@outlook.com</p>
+                    <div style={{clear:'both'}}></div>
+                    </div>
+                </li>
+                <li className="contact-info-item">
+                    <a href="https://github.com/TarekAykour" style={{float: 'left'}}><FontAwesomeIcon size="2x" style={{color: 'white', textAlign: 'center'}} icon={faGithub}/></a>
+                    <p style={{color:'white', float: 'right'}}>TarekAykour</p>
+                    <div style={{clear: 'both'}}></div>
+                </li>
+                <li className="contact-info-item">
+                    <a href="https://www.linkedin.com/in/tarekaykour/" style={{float: 'left'}}><FontAwesomeIcon style={{color: 'white', textAlign: 'center'}} size="2x" icon={faLinkedin}/></a>
+                    <p style={{color:'white', float: 'right'}}>tarekaykour</p>
+                    <div style={{clear: 'both'}}></div>
+                </li>
+            </ul>
             </div>
             </div>
         </div>

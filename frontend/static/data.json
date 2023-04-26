@@ -27,7 +27,7 @@
             "bankapp/bankapp-transactions.png",
             "bankapp/bankapp-profile.png"
         ],
-        "link": "http://ec2-13-41-54-184.eu-west-2.compute.amazonaws.com"
+        "link": "https://payfriend.pythonanywhere.com"
     },
 
     {
@@ -82,7 +82,7 @@
     {
         "id": 6,
         "name": "sockY",
-        "description": "SockY is an online chatapp where you can add users and chat with them. The app also offers chat groups, chat settings to costumize your chat, profile costumization and encryption.",
+        "description": "SockY is an online chatapp where you can add users and chat with them. The app also offers chat groups, chat settings to costumize your chat, profile costumization and encryption. (Might take up to 30 seconds to load due to free tier on render.app)",
         "technologies": ["Django" ,"Django channels", "Redis (chat server)" ,"React (frontend)", "HTML (frontend)", "CSS3 (frontend)"],
         "images": [
             "chatapp/Login.png",

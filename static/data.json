@@ -27,7 +27,7 @@
             "bankapp/bankapp-transactions.png",
             "bankapp/bankapp-profile.png"
         ],
-        "link": "http://ec2-13-41-54-184.eu-west-2.compute.amazonaws.com"
+        "link": "https://payfriend.pythonanywhere.com"
     },
 
     {
@@ -91,7 +91,7 @@
             "chatapp/chat.png",
             "chatapp/friends.png"
         ],
-        "link": "https://chatapp-jgrw.onrender.com"
+        "link": "https://socky.pythonanywhere.com/"
     }
 
 

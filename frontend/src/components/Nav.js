@@ -41,7 +41,7 @@ function Nav(){
                 <ul className="nav justify-content-center Desktop-Nav">
                     <li onClick={()=> {setOpen(false)}} className="nav-item"><Link to="/">Home</Link></li>
                     <li onClick={()=> {setOpen(false)}} className="nav-item"><Link to="/journey">Journey</Link></li>
-                    <li onClick={()=> {setOpen(false)}} className="nav-item"><Link to="/portfolio">Portfolio</Link></li>
+                    <li onClick={()=> {setOpen(false)}} className="nav-item"><a href="/portfolio">Portfolio</a></li>
                     <li onClick={()=> {setOpen(false)}} className="nav-item"><Link to="/contact">Contact</Link></li>
                     
                 </ul>
